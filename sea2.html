@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="swApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seaworld</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-controller="swCtrlr">
+    <div class="bg-img">
+        <div class="container">
+          <div class="topnav">
+            <img src="images/marLogo.svg" class="headerLogo" alt="logo">
+            <nav>
+                <ul>
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Gallery</a>
+                  <a href="#">Blog</a>
+                  <a href="#">Contact</a>
+                  <button id="bookerButton"><a href="#">Book an experience</a></button>
+                </ul>
+              </nav>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="tripHeader">
+          <h2>Our Trips</h2>
+          <p>We have trips worldwide; incredible experiences that will not only provide unique animal interactions but will also introduce you to local heroes that are making a difference in their communities each and every day. Our trips educate and connect you with conservationists that are making changes in small communities. Little steps with huge impacts!</p>
+        </div>
+        <div class="cards">
+          <div ng-repeat="trip in trips" class="trips">
+            <img src="images/{{trip.img}}.jpg" alt="">
+            <h2>{{trip.title}}</h2>
+            <p>{{trip.description}}</p>
+        </div>
+        </div>
+        
+      </main>
+      <footer>
+        <div class="content" id="social">
+            <div class="contact">
+                <h4>Got questions? Get in touch</h4>
+                <p class="desc">If you'd like more information about any of our trips, please reach out and we will contact you promptly. And while you're at it, signup for our newsletter to stay informed on all the latest MAR adventures, research and awesome images that we've captured along the way.</p>
+                <form>
+                    <div class="two-col-form">
+                        <div class="form-part">
+                            <label for="name">Your Name:</label><br>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form-part">
+                            <label for="phone">Phone:</label><br>
+                            <input type="number" name="phone" id="phone" placeholder="111-222-3333">
+                        </div>
+                        <div class="form-part">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-part check-part">
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                            <label for="newsletter">Sign up for our newsletter!</label>
+                        </div>
+                    </div>
+    
+                    <div id="preference">
+                        <p>Preferred method of contact:</p>
+                        <div>
+                            <div>
+                                <input type="radio" id="email-radio" name="fav_language" value="email-radio">
+                                <label for="email-radio">Email</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="phone-radio" name="fav_language" value="phone-radio">
+                                <label for="phone-radio">Phone</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="text-radio" name="fav_language" value="text-radio">
+                                <label for="text-radio">Text</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-part">
+                        <label for="message">Your Message / Question:</label><br>
+                        <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                    </div>
+    
+                    <button>
+                        <i class="fa-solid fa-fish"></i>
+                        <span>Send request</span>
+                    </button>
+                </form>
+            </div>
+            <div class="media">
+                <p>Let's be social - connect with us!</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <section id="contact">
+        
+        <div class="content">
+            <h3>Contact Information</h3>
+            <ul>
+                <li>Phone: 123-456-7890</li>
+                <li>Email: info@mar.com</li>
+                <li>Address: 1234 Ocean Ave. Wavy, CA 12345</li>
+            </ul>
+            <p>MAR ©2023</p>
+        </div>
+    </section>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>

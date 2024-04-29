@@ -1,0 +1,87 @@
+.bg-img {
+    /* The image used */
+    background-image: url("images/header1_lg.jpg");
+    
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin-top: 380px;
+    width: 100%;
+    
+  }
+  
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(0, 9, 58);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    
+    color: yellow;
+  }
+  
+  nav {
+    flex: 1;
+    text-align: right;
+    position: relative;
+  }
+  
+  #bookerButton {
+    background-color: #0eb8fc;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+  }
+
+  .headerLogo{
+    width: 100px;
+  }
+
+  main{
+    margin-top: 100px;
+  }
+  
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  
+  justify-content: center;
+}
+  .trips{
+    border: gray solid 1px;
+    width: 500px;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .trips img{
+    max-width: 500px;
+  }
