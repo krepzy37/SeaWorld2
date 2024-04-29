@@ -1,0 +1,38 @@
+[
+    {
+        "id": "01",
+        "title": "Climate change",
+        "description": "It's making oceans hotter, promoting acidification, and making it harder for marine life to breathe by reducing dissolved oxygen levels. We can reduce our own carbon footprint and help decelerate climate change by making smart choices about what we eat and how we travel.",
+        "img": "action1.jpg"
+    },
+    {
+        "id": "02",
+        "title": "Plastic Pollution",
+        "description": "We can all help by refusing single-use plastics such as straws, cutlery, and food containers. These are in our lives for seconds, but spend centuries circulating in our oceans, causing significant damage. Don't support businesses that are using single-use plastics.",
+        "img": "action2.jpg"
+    },
+    {
+        "id": "03",
+        "title": "Sustainable Seafood",
+        "description": "Do you know where your food is coming from, how and where it is caught? Long line fishing is extremely disruptive to our oceans. It can trap thousands of by-catch animals, and nets are often lost at sea and become death traps for many animals. The practice of over-fishing certain species is creating a huge imbalance in our sea-based populations.",
+        "img": "action3.jpg"
+    },
+    {
+        "id": "04",
+        "title": "Fisheries subsidies",
+        "description": "Every year, governments spend billions on fisheries subsidies, the majority of which directly accelerate harmful overfishing. Subsidies lead to too many fishing fleets and vessels that can remain out at sea longer and decimate populations in certain areas.",
+        "img": "action4.jpg"
+    },
+    {
+        "id": "05",
+        "title": "Marine protection",
+        "description": "Today, only 2% of our global oceans are protected marine parks (Remember that the ocean covers 70% of our Earth!). Scientists estimate we may need to protect 30% of the oceans to provide properly for the future of ocean wildlife and ocean health. Make sure your representatives know that these issues are important to you!",
+        "img": "action5.jpg"
+    },
+    {
+        "id": "06",
+        "title": "Apex predators",
+        "description": "Our apex predators, like sharks, play a critical role in regulating the eco-system - and they need our help! Sharks are especially vulnerable to overfishing. As a result of fishing pressures, a third of shark species are already threatened with extinction.",
+        "img": "action6.jpg"
+      }
+  ]
